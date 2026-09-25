@@ -26,7 +26,7 @@ jobs:
         run: mvn compile
       - name: Maven Test
         run: mvn test
-      - name: Maven Package
+      - name: Maven clean package
         run: mvn package -DskipTests
       - name: Check JAR File
         run: ls -lh target/
